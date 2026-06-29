@@ -1,0 +1,125 @@
+🧫 BactoScan AI – Automated Bacterial Colony Counter
+Overview
+
+BactoScan AI is an AI-powered mobile application developed to automate bacterial colony detection and counting from Petri dish images. The platform helps microbiology researchers, laboratory technicians, educators, and students perform colony analysis within seconds, significantly reducing manual effort and human counting errors.
+
+The application combines Artificial Intelligence, Cloud Computing, Mobile Development, and Secure Payment Processing into a single ecosystem, providing a fast, scalable, and user-friendly laboratory solution.
+
+Problem Statement
+
+Traditional bacterial colony counting is a time-consuming and error-prone process. Researchers often spend significant time manually counting colonies, especially when working with large datasets or multiple Petri dishes.
+
+BactoScan AI addresses this challenge by using a custom-trained YOLOv8 object detection model to automatically identify and count bacterial colonies with high accuracy.
+
+Key Features
+🧠 AI-Powered Colony Detection
+Automatic bacterial colony detection using a custom-trained YOLOv8 model.
+High-speed cloud inference through Hugging Face Spaces.
+Precise colony localization and total colony count generation.
+📱 Secure User Authentication
+Firebase Phone Authentication with OTP verification.
+SHA-1, SHA-256 and Google Play Integrity support.
+Secure user session management.
+✏️ Manual Correction Mode
+Add or remove detected colonies manually.
+Improve final accuracy when required.
+Suitable for research-grade validation.
+💾 Detection History
+Save previous scans and analysis results.
+Access historical records anytime.
+🔍 Interactive Image Viewer
+Zoom and pan support for detailed inspection.
+Enhanced colony visualization experience.
+🌙 Modern User Interface
+Dark mode support.
+Clean and intuitive mobile design.
+📤 Export & Sharing
+Share colony counting results directly.
+Generate reports for research documentation.
+💳 Premium Subscription System
+Integrated Razorpay payment gateway.
+UPI, Wallet, Google Pay, PhonePe and Paytm support.
+Subscription-based scan packages.
+System Architecture
+1. User Authentication
+
+Users register using their phone number. Firebase Authentication securely verifies users through OTP-based authentication.
+
+2. Image Processing Workflow
+User captures a Petri dish image.
+Image is sent to the cloud inference server.
+YOLOv8 model performs colony detection.
+Detection coordinates and colony counts are returned.
+Results are displayed instantly within the application.
+3. Data Synchronization
+
+User profiles, scan history, and credit management are synchronized using Firebase Firestore and monitored through a Django backend service.
+
+4. Premium Access Management
+
+Users can purchase additional scan credits or premium subscriptions through Razorpay's secure payment infrastructure.
+
+Technical Stack
+Mobile Application
+Flutter
+Dart
+Backend Services
+Django
+Python
+Database
+Firebase Firestore
+Artificial Intelligence
+YOLOv8
+PyTorch
+TFLite
+Cloud Infrastructure
+Hugging Face Spaces
+Firebase Services
+Payment Processing
+Razorpay SDK
+Premium Plans
+Free Plan
+5 Free AI Detections
+Basic Application Access
+Monthly Plan
+Unlimited Colony Detection
+Priority Access
+Faster Processing
+Annual Plan
+Full Premium Features
+Discounted Pricing
+Research-Friendly Usage
+Educational Access
+
+Educational institutions and professors can request academic access for teaching and laboratory demonstrations.
+
+Referral Code:
+BCAI2026
+
+Privacy & Security
+User phone numbers are used solely for authentication and account security.
+Images are processed temporarily for AI inference.
+No public storage of user laboratory images without explicit permission.
+Secure cloud communication protocols are implemented throughout the system.
+My Contribution
+
+As the sole developer of BactoScan AI, I was responsible for:
+
+Designing and developing the complete Flutter application.
+Training and integrating the YOLOv8 AI model.
+Building backend services using Django.
+Implementing Firebase Authentication and Firestore integration.
+Developing subscription and payment workflows using Razorpay.
+Designing the application architecture and user experience.
+Deploying cloud-based inference infrastructure.
+Impact
+
+BactoScan AI demonstrates how Artificial Intelligence can streamline laboratory workflows by delivering rapid and accurate bacterial colony analysis. The project combines AI, cloud infrastructure, mobile development, and secure payments into a practical real-world research solution.
+
+Status
+
+✅ Production Ready
+✅ AI Model Integrated
+✅ Payment Gateway Integrated
+✅ Cloud Inference Enabled
+✅ Mobile Application Completed

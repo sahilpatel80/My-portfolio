@@ -1,0 +1,97 @@
+🏨 Rovar Cosmetics – Luxury Hotel Amenities Manufacturing Website
+Overview
+
+Rovar Cosmetics is a professional corporate website developed for a leading manufacturer and exporter of luxury hotel amenities. The platform was designed to showcase the company's product portfolio, manufacturing capabilities, export services, and brand identity to hotels, resorts, distributors, and international clients.
+
+The website serves as a digital business platform that helps potential customers explore premium hospitality products, understand the company's manufacturing expertise, and connect directly for business inquiries.
+
+Project Objectives
+Establish a strong online presence for the company.
+Showcase luxury hotel amenity products professionally.
+Generate B2B leads from hotels, resorts, and distributors.
+Highlight manufacturing and export capabilities.
+Improve brand credibility in domestic and international markets.
+Key Features
+🏨 Luxury Product Showcase
+Hotel toiletries and guest amenities.
+Premium hospitality product collections.
+Detailed product categories and specifications.
+High-quality product image galleries.
+🌍 Export-Focused Business Website
+Presentation of export capabilities.
+International business inquiry support.
+Corporate profile and manufacturing information.
+Global market positioning.
+📱 Fully Responsive Design
+Mobile, tablet, and desktop optimized.
+Smooth user experience across all devices.
+📞 Business Inquiry System
+Contact forms for distributors and hotel partners.
+Quick inquiry submission.
+Direct communication channels for potential clients.
+⚡ Performance & SEO Optimization
+Fast-loading pages.
+Search engine optimized structure.
+Enhanced visibility for hospitality and export-related searches.
+🎨 Professional Corporate UI
+Luxury-inspired design matching the hospitality industry.
+Clean layouts and modern user experience.
+Brand-focused visual presentation.
+Development Process
+Requirement Analysis
+Studied business requirements and target audience.
+Identified product categories and export business needs.
+Website Design
+Designed a premium corporate interface aligned with luxury hospitality branding.
+Created intuitive navigation for product exploration.
+Development
+Developed responsive pages and business modules.
+Implemented inquiry and contact functionalities.
+Optimized website performance and accessibility.
+Testing & Deployment
+Conducted cross-device and browser testing.
+Configured hosting, domain, and production deployment.
+Technical Stack
+Frontend
+HTML5
+CSS3
+JavaScript
+Design
+Responsive Web Design
+Mobile-First Development
+Deployment
+Domain & Hosting Configuration
+Production Deployment
+Website Maintenance
+My Contributions
+
+As the website developer, I was responsible for:
+
+Complete website design and development.
+Corporate UI/UX design implementation.
+Product showcase page development.
+Mobile responsiveness optimization.
+Contact and inquiry form integration.
+Website deployment and hosting setup.
+Performance optimization and testing.
+Business Impact
+Established a professional digital presence for the company.
+Improved visibility among hotel chains and distributors.
+Enhanced customer engagement through online inquiries.
+Created a scalable platform for future product expansion and international marketing.
+Skills Demonstrated
+Client Website Development
+Corporate Web Design
+Responsive UI Development
+Business Website Architecture
+SEO Optimization
+Website Deployment
+Performance Optimization
+Professional UI/UX Design
+Project Status
+
+✅ Live Website Deployed
+✅ Mobile Responsive
+✅ SEO Optimized
+✅ Production Ready
+✅ Client Project Successfully Delivered

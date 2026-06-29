@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahil Patel | Portfolio</title>
+    <!-- Remix Icon for modern minimal icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Google Fonts: Plus Jakarta Sans for premium, clean styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo"><span class="logo__dot">&lt;</span>Sahil.Dev<span class="logo__dot">/&gt;</span></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#certificates" class="nav__link">Certificates</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <!-- Theme Toggle Button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Home / Hero Section -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <span class="home__greeting">Welcome to my universe</span>
+            <h1 class="home__title">Hi, I'm <span class="gradient-text">Sahil Patel</span></h1>
+            <h3 class="home__subtitle">I am a <span class="typing-text"></span></h3>
+            <p class="home__description">I build AI-powered mobile applications, Django backends, and integrate computer vision models (like YOLOv8) into real-world laboratory workflows.</p>
+            <div class="home__buttons">
+              <a href="#projects" class="button">View Projects <i class="ri-arrow-right-up-line"></i></a>
+              <a href="assets/docs/cv.pdf" download class="button button--ghost">Download CV <i class="ri-download-line"></i></a>
+            </div>
+            <div class="home__social">
+              <a href="https://github.com/sahilpatel80" target="_blank" class="home__social-icon"><i class="ri-github-fill"></i></a>
+              <a href="https://linkedin.com/in/sahil-patel-757239349" target="_blank" class="home__social-icon"><i class="ri-linkedin-box-fill"></i></a>
+            </div>
+          </div>
+
+          <div class="home__image-container">
+            <div class="home__blob">
+              <!-- Profile Image -->
+              <img src="assets/image/my.png" alt="Profile Photo" class="home__img" id="profile-photo" />
+              <!-- Blob shapes for aesthetic styling -->
+              <div class="blob-glow"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My background & skills</span>
+
+        <div class="about__container container grid">
+          <div class="about__info">
+            <h3 class="about__info-title">Who am I?</h3>
+            <p class="about__description">I am a passionate developer with a deep interest in exploring new technologies. I thoroughly enjoy working with Python, AI/ML, Robotics, and creating modern, high-performance websites. As an MCA student at LJ University, I love building end-to-end applications that bridge the gap between AI algorithms and user-friendly software.</p>
+            <p class="about__description">I am the sole developer of BactoScan AI, an automated colony counter, and have experience deploying deep learning models to the cloud, building ASP.NET full-stack sites, and developing IoT embedded systems.</p>
+
+            <div class="about__details">
+              <div class="about__details-item">
+                <i class="ri-mail-line"></i>
+                <div>
+                  <h4>Email</h4>
+                  <span>sahilpatel23500@gmail.com</span>
+                </div>
+              </div>
+              <div class="about__details-item">
+                <i class="ri-map-pin-line"></i>
+                <div>
+                  <h4>Location</h4>
+                  <span>Ahmedabad, India</span>
+                </div>
+              </div>
+              <div class="about__details-item">
+                <i class="ri-graduation-cap-line"></i>
+                <div>
+                  <h4>MCA (2024 - 2026)</h4>
+                  <span>LJ University</span>
+                </div>
+              </div>
+              <div class="about__details-item">
+                <i class="ri-book-open-line"></i>
+                <div>
+                  <h4>BCA (2021 - 2024)</h4>
+                  <span>KSV University | GPA: 6.80</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__skills">
+            <h3 class="about__info-title">My Skills</h3>
+
+            <div class="skills__groups">
+              <div class="skills__category">
+                <h4 class="skills__category-title"><i class="ri-code-line"></i> Languages</h4>
+                <div class="skills__list">
+                  <span class="skills__pill">C</span>
+                  <span class="skills__pill">C++</span>
+                  <span class="skills__pill">Java</span>
+                  <span class="skills__pill">Python</span>
+                  <span class="skills__pill">Dart</span>
+                  <span class="skills__pill">AI/ML</span>
+                </div>
+              </div>
+
+              <div class="skills__category">
+                <h4 class="skills__category-title"><i class="ri-code-s-slash-line"></i> Web & Frameworks</h4>
+                <div class="skills__list">
+                  <span class="skills__pill">ASP.NET</span>
+                  <span class="skills__pill">Django</span>
+                  <span class="skills__pill">Flutter</span>
+                  <span class="skills__pill">HTML</span>
+                  <span class="skills__pill">CSS</span>
+                </div>
+              </div>
+
+              <div class="skills__category">
+                <h4 class="skills__category-title"><i class="ri-database-2-line"></i> Databases & Tools</h4>
+                <div class="skills__list">
+                  <span class="skills__pill">MySQL</span>
+                  <span class="skills__pill">DBMS</span>
+                  <span class="skills__pill">VS Code</span>
+                  <span class="skills__pill">Visual Studio</span>
+                  <span class="skills__pill">Android Studio</span>
+                  <span class="skills__pill">Git</span>
+                  <span class="skills__pill">GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="projects__filters container">
+          <button class="projects__filter-btn active-filter" data-filter="all">All</button>
+          <button class="projects__filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="projects__filter-btn" data-filter="web">Web & IoT</button>
+        </div>
+
+        <div class="projects__container container grid">
+          <!-- Project 1 -->
+          <article class="project__card open-modal-btn" data-project-id="bactoscan" data-category="mobile">
+            <div class="project__img-wrapper">
+              <img src="assets/image/projects/bactoscan.png" alt="BactoScan AI" class="project__img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'500\' viewBox=\'0 0 800 500\'><rect width=\'100%\' height=\'100%\' fill=\'%23121520\'/><text x=\'50%\' y=\'50%\' font-family=\'Plus Jakarta Sans\' font-size=\'32\' fill=\'%238b8d99\' text-anchor=\'middle\' dominant-baseline=\'middle\'>Image Placeholder</text></svg>';" />
+              <div class="project__overlay">
+                <div class="project__links">
+                  <a href="https://github.com/sahilpatel80" target="_blank" class="project__link-icon" title="View GitHub" onclick="event.stopPropagation();"><i class="ri-github-line"></i></a>
+                  <a href="assets/docs/app-arm64-v8a-release.apk" download class="project__link-icon" title="Download APK" onclick="event.stopPropagation();"><i class="ri-download-line"></i></a>
+                  <span class="project__link-icon" title="View Details"><i class="ri-eye-line"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="project__content">
+              <span class="project__subtitle-tag">Mobile & AI</span>
+              <h3 class="project__title">BactoScan AI Colony Counter</h3>
+              <p class="project__description">AI-powered mobile app built to automate bacterial colony detection from Petri dishes using a custom TensorFlow model, featuring real-time segmented scans.</p>
+
+              <div class="project__buttons" style="margin-top: auto; margin-bottom: var(--mb-0-75); display: flex; gap: 0.5rem;">
+                <a href="assets/docs/app-arm64-v8a-release.apk" download class="button button--ghost" style="padding: 0.4rem 0.8rem; font-size: var(--smaller-font-size); border-radius: var(--radius-sm); border-width: 1px;" onclick="event.stopPropagation();"><i class="ri-download-line"></i> Download APK</a>
+              </div>
+
+              <div class="project__tech-list">
+                <span class="project__tech-pill">Flutter</span>
+                <span class="project__tech-pill">TensorFlow</span>
+                <span class="project__tech-pill">OpenCV</span>
+                <span class="project__tech-pill">Python</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project__card open-modal-btn" data-project-id="homeservice" data-category="web">
+            <div class="project__img-wrapper">
+              <img src="assets/image/projects/homeservice.png" alt="Home Service Provider System" class="project__img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'500\' viewBox=\'0 0 800 500\'><rect width=\'100%\' height=\'100%\' fill=\'%23121520\'/><text x=\'50%\' y=\'50%\' font-family=\'Plus Jakarta Sans\' font-size=\'32\' fill=\'%238b8d99\' text-anchor=\'middle\' dominant-baseline=\'middle\'>Image Placeholder</text></svg>';" />
+              <div class="project__overlay">
+                <div class="project__links">
+                  <a href="https://github.com/sahilpatel80" target="_blank" class="project__link-icon" onclick="event.stopPropagation();"><i class="ri-github-line"></i></a>
+                  <span class="project__link-icon"><i class="ri-eye-line"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="project__content">
+              <span class="project__subtitle-tag">Web Application</span>
+              <h3 class="project__title">Home Service Provider System</h3>
+              <p class="project__description">Full-stack web application connecting users with local service providers. Features dynamic booking, online payments, role authentication, and an integrated wallet.</p>
+              <div class="project__tech-list">
+                <span class="project__tech-pill">ASP.NET</span>
+                <span class="project__tech-pill">MySQL</span>
+                <span class="project__tech-pill">C#</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project__card open-modal-btn" data-project-id="iotwaste" data-category="web">
+            <div class="project__img-wrapper">
+              <img src="assets/image/projects/iotwaste.png" alt="IoT Waste Segregation System" class="project__img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'500\' viewBox=\'0 0 800 500\'><rect width=\'100%\' height=\'100%\' fill=\'%23121520\'/><text x=\'50%\' y=\'50%\' font-family=\'Plus Jakarta Sans\' font-size=\'32\' fill=\'%238b8d99\' text-anchor=\'middle\' dominant-baseline=\'middle\'>Image Placeholder</text></svg>';" />
+              <div class="project__overlay">
+                <div class="project__links">
+                  <a href="https://github.com/sahilpatel80" target="_blank" class="project__link-icon" onclick="event.stopPropagation();"><i class="ri-github-line"></i></a>
+                  <span class="project__link-icon"><i class="ri-eye-line"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="project__content">
+              <span class="project__subtitle-tag">IoT & Embedded Systems</span>
+              <h3 class="project__title">IoT Smart Waste Segregator</h3>
+              <p class="project__description">An automated smart dustbin that segregates waste into wet, dry, and metal categories using moisture and metal sensors, lowering manual sorting overhead.</p>
+              <div class="project__tech-list">
+                <span class="project__tech-pill">C++</span>
+                <span class="project__tech-pill">Arduino</span>
+                <span class="project__tech-pill">Sensors</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project__card open-modal-btn" data-project-id="hotel" data-category="mobile">
+            <div class="project__img-wrapper">
+              <img src="assets/image/projects/hotel.png" alt="Hotel Management App" class="project__img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'500\' viewBox=\'0 0 800 500\'><rect width=\'100%\' height=\'100%\' fill=\'%23121520\'/><text x=\'50%\' y=\'50%\' font-family=\'Plus Jakarta Sans\' font-size=\'32\' fill=\'%238b8d99\' text-anchor=\'middle\' dominant-baseline=\'middle\'>Image Placeholder</text></svg>';" />
+              <div class="project__overlay">
+                <div class="project__links">
+                  <a href="https://github.com/sahilpatel80" target="_blank" class="project__link-icon" onclick="event.stopPropagation();"><i class="ri-github-line"></i></a>
+                  <span class="project__link-icon"><i class="ri-eye-line"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="project__content">
+              <span class="project__subtitle-tag">Mobile Application</span>
+              <h3 class="project__title">Hotel Management Application</h3>
+              <p class="project__description">Cross-platform hotel booking mobile application featuring REST API integrations, dynamic room listings, JSON processing, and reservation tracking.</p>
+              <div class="project__tech-list">
+                <span class="project__tech-pill">Flutter</span>
+                <span class="project__tech-pill">PHP</span>
+                <span class="project__tech-pill">MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project__card open-modal-btn" data-project-id="rimpro" data-category="web">
+            <div class="project__img-wrapper">
+              <img src="assets/image/projects/rimpro.png" alt="Rimpro India Website" class="project__img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'500\' viewBox=\'0 0 800 500\'><rect width=\'100%\' height=\'100%\' fill=\'%23121520\'/><text x=\'50%\' y=\'50%\' font-family=\'Plus Jakarta Sans\' font-size=\'32\' fill=\'%238b8d99\' text-anchor=\'middle\' dominant-baseline=\'middle\'>Image Placeholder</text></svg>';" />
+              <div class="project__overlay">
+                <div class="project__links">
+                  <a href="https://github.com/sahilpatel80" target="_blank" class="project__link-icon" title="View GitHub" onclick="event.stopPropagation();"><i class="ri-github-line"></i></a>
+                  <a href="https://www.rimpro-india.com/" target="_blank" class="project__link-icon" title="Visit Website" onclick="event.stopPropagation();"><i class="ri-external-link-line"></i></a>
+                  <span class="project__link-icon" title="View Details"><i class="ri-eye-line"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="project__content">
+              <span class="project__subtitle-tag">B2B Web Portal</span>
+              <h3 class="project__title">Rimpro India Corporate Web</h3>
+              <p class="project__description">Business web portal for a global chemical manufacturer/exporter. Serves application directories and automates domestic and international sales inquiries.</p>
+
+              <div class="project__buttons" style="margin-top: auto; margin-bottom: var(--mb-0-75); display: flex; gap: 0.5rem;">
+                <a href="https://www.rimpro.in" target="_blank" class="button button--ghost" style="padding: 0.4rem 0.8rem; font-size: var(--smaller-font-size); border-radius: var(--radius-sm); border-width: 1px;" onclick="event.stopPropagation();"><i class="ri-external-link-line"></i> Visit Website</a>
+              </div>
+
+              <div class="project__tech-list">
+                <span class="project__tech-pill">HTML5</span>
+                <span class="project__tech-pill">CSS3</span>
+                <span class="project__tech-pill">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project__card open-modal-btn" data-project-id="rovar" data-category="web">
+            <div class="project__img-wrapper">
+              <img src="assets/image/projects/rovar.png" alt="Rovar Cosmetics Website" class="project__img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'500\' viewBox=\'0 0 800 500\'><rect width=\'100%\' height=\'100%\' fill=\'%23121520\'/><text x=\'50%\' y=\'50%\' font-family=\'Plus Jakarta Sans\' font-size=\'32\' fill=\'%238b8d99\' text-anchor=\'middle\' dominant-baseline=\'middle\'>Image Placeholder</text></svg>';" />
+              <div class="project__overlay">
+                <div class="project__links">
+                  <a href="https://github.com/sahilpatel80" target="_blank" class="project__link-icon" title="View GitHub" onclick="event.stopPropagation();"><i class="ri-github-line"></i></a>
+                  <a href="https://rovarcosmetics.com" target="_blank" class="project__link-icon" title="Visit Website" onclick="event.stopPropagation();"><i class="ri-external-link-line"></i></a>
+                  <span class="project__link-icon" title="View Details"><i class="ri-eye-line"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="project__content">
+              <span class="project__subtitle-tag">B2B Web Portal</span>
+              <h3 class="project__title">Rovar Cosmetics Corporate Web</h3>
+              <p class="project__description">Luxury hotel amenities manufacturer corporate website, showcasing product portfolios and capturing partner and export distribution leads.</p>
+
+              <div class="project__buttons" style="margin-top: auto; margin-bottom: var(--mb-0-75); display: flex; gap: 0.5rem;">
+                <a href="https://rovarcosmetics.com" target="_blank" class="button button--ghost" style="padding: 0.4rem 0.8rem; font-size: var(--smaller-font-size); border-radius: var(--radius-sm); border-width: 1px;" onclick="event.stopPropagation();"><i class="ri-external-link-line"></i> Visit Website</a>
+              </div>
+
+              <div class="project__tech-list">
+                <span class="project__tech-pill">HTML5</span>
+                <span class="project__tech-pill">CSS3</span>
+                <span class="project__tech-pill">JavaScript</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Certificates Section -->
+      <section class="certificates section" id="certificates">
+        <h2 class="section__title">Certificates</h2>
+        <span class="section__subtitle">My verified achievements</span>
+
+        <div class="certificates__container container grid">
+          <!-- Certificate Card -->
+          <div class="certificate__card">
+            <i class="ri-award-line certificate__icon"></i>
+            <h3 class="certificate__title">BactoScan AI</h3>
+            <span class="certificate__subtitle">Project Completion Certificate</span>
+            <p class="certificate__description">
+              Successfully developed and validated BactoScan AI automated bacterial colony counter under professional supervision and criteria.
+            </p>
+            <a href="assets/docs/bactoscan-certificate.pdf" target="_blank" class="button button--ghost" style="padding: 0.6rem 1.2rem; font-size: var(--small-font-size); border-radius: var(--radius-sm); border-width: 1px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: auto;" onerror="this.onclick=function(e){ e.preventDefault(); alert('Certificate file not found. Place your PDF certificate at assets/docs/bactoscan-certificate.pdf.'); };">
+              <i class="ri-verified-badge-line"></i> View Certificate
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Talk to me</h3>
+
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="ri-mail-send-line contact__card-icon"></i>
+                <h4 class="contact__card-title">Email</h4>
+                <span class="contact__card-data">sahilpatel23500@gmail.com</span>
+                <a href="mailto:sahilpatel23500@gmail.com" class="contact__button">Write me <i class="ri-arrow-right-line contact__button-icon"></i></a>
+              </div>
+
+              <div class="contact__card">
+                <i class="ri-linkedin-box-line contact__card-icon"></i>
+                <h4 class="contact__card-title">LinkedIn</h4>
+                <span class="contact__card-data">sahil-patel-757239349</span>
+                <a href="https://linkedin.com/in/sahil-patel-757239349" target="_blank" class="contact__button">Connect <i class="ri-arrow-right-line contact__button-icon"></i></a>
+              </div>
+
+              <div class="contact__card">
+                <i class="ri-phone-line contact__card-icon"></i>
+                <h4 class="contact__card-title">Phone / WhatsApp</h4>
+                <span class="contact__card-data">+91 8469277581</span>
+                <a href="https://wa.me/918469277581" target="_blank" class="contact__button">Text me <i class="ri-arrow-right-line contact__button-icon"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">Send a message</h3>
+
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Name</label>
+                <input type="text" placeholder="Insert your name" class="contact__form-input" required id="form-name" />
+              </div>
+
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Mail</label>
+                <input type="email" placeholder="Insert your email" class="contact__form-input" required id="form-email" />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Project / Message</label>
+                <textarea placeholder="Write your message" class="contact__form-input" required id="form-message"></textarea>
+              </div>
+
+              <button type="submit" class="button">Send Message <i class="ri-send-plane-line"></i></button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Sahil Patel</h1>
+
+        <ul class="footer__list">
+          <li>
+            <a href="#about" class="footer__link">About Me</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+          <li>
+            <a href="#certificates" class="footer__link">Certificates</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="footer__social">
+          <a href="https://github.com/sahilpatel80" target="_blank" class="footer__social-link"><i class="ri-github-line"></i></a>
+          <a href="https://linkedin.com/in/sahil-patel-757239349" target="_blank" class="footer__social-link"><i class="ri-linkedin-line"></i></a>
+        </div>
+
+        <span class="footer__copy">&#169; <span id="current-year"></span> All rights reserved. Built with passion.</span>
+      </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div class="project-modal" id="project-modal">
+      <div class="project-modal__content">
+        <button class="project-modal__close" id="project-modal-close"><i class="ri-close-line"></i></button>
+        <div class="project-modal__grid">
+          <div class="project-modal__gallery">
+            <div class="project-modal__img-box">
+              <!-- Left blank for user to add images dynamically -->
+            </div>
+            <div class="project-modal__links" id="modal-links" style="margin-top: 1rem; display: flex; justify-content: center; gap: 0.75rem; flex-wrap: wrap;">
+              <!-- Dynamic buttons will be inserted here by JS -->
+            </div>
+          </div>
+          <div class="project-modal__details">
+            <span class="project-modal__subtitle" id="modal-subtitle">Category</span>
+            <h3 class="project-modal__title" id="modal-title">Project Name</h3>
+            <div class="project-modal__tech" id="modal-tech">
+              <!-- Tech pills go here dynamically -->
+            </div>
+            <div class="project-modal__scrollable">
+              <div class="project-modal__section">
+                <h4>Overview</h4>
+                <p id="modal-overview">Project description...</p>
+              </div>
+              <div class="project-modal__section">
+                <h4>Key Features</h4>
+                <ul id="modal-features">
+                  <!-- List items dynamically -->
+                </ul>
+              </div>
+              <div class="project-modal__section">
+                <h4>My Contribution</h4>
+                <p id="modal-contribution">Contributions...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-line"></i></a>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
