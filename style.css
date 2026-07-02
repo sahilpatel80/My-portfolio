@@ -197,7 +197,7 @@ button {
 .header {
     width: 100%;
     background-color: transparent;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
@@ -1016,6 +1016,10 @@ body.dark-theme .scroll-header {
 @media screen and (min-width: 768px) {
     .body {
         margin: 0;
+    }
+
+    .header {
+        position: fixed;
     }
 
     .section {
