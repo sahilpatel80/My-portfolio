@@ -539,6 +539,16 @@ body.dark-theme .scroll-header {
     font-size: var(--normal-font-size);
 }
 
+.about__email-link {
+    color: var(--title-color);
+    transition: color .3s;
+}
+
+.about__email-link:hover {
+    color: var(--first-color);
+}
+
+
 /* Skills styling */
 .about__skills {
     background-color: var(--container-color);
@@ -809,6 +819,16 @@ body.dark-theme .scroll-header {
     margin-bottom: var(--mb-0-75);
 }
 
+.contact__card-email-link {
+    color: var(--text-color-light);
+    transition: color .3s;
+}
+
+.contact__card-email-link:hover {
+    color: var(--first-color);
+}
+
+
 .contact__button {
     font-size: var(--small-font-size);
     color: var(--first-color);
@@ -979,8 +999,7 @@ body.dark-theme .scroll-header {
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
-    .about__container,
-    .contact__container {
+    .about__container {
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -1038,7 +1057,7 @@ body.dark-theme .scroll-header {
     }
     
     .contact__info {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         column-gap: 1.5rem;
     }
 }
@@ -1063,10 +1082,7 @@ body.dark-theme .scroll-header {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .contact__info {
-        grid-template-columns: 1fr;
-        row-gap: 1.5rem;
-    }
+
 }
 
 /*==================== PROJECT MODAL ====================*/

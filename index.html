@@ -60,10 +60,10 @@
             <span class="home__greeting">Welcome to my universe</span>
             <h1 class="home__title">Hi, I'm <span class="gradient-text">Sahil Patel</span></h1>
             <h3 class="home__subtitle">I am a <span class="typing-text"></span></h3>
-            <p class="home__description">I build AI-powered mobile applications and integrate computer vision models (like YOLOv8) into real-world laboratory workflows.</p>
+            <p class="home__description">I build AI-powered mobile applications, Django backends, and integrate computer vision models (like YOLOv8) into real-world laboratory workflows.</p>
             <div class="home__buttons">
               <a href="#projects" class="button">View Projects <i class="ri-arrow-right-up-line"></i></a>
-              <a href="assets/docs/cv.pdf" download class="button button--ghost">Download CV <i class="ri-download-line"></i></a>
+              <a href="assets/docs/cv.pdf" target="_blank" class="button button--ghost">View CV <i class="ri-eye-line"></i></a>
             </div>
             <div class="home__social">
               <a href="https://github.com/sahilpatel80" target="_blank" class="home__social-icon"><i class="ri-github-fill"></i></a>
@@ -98,7 +98,7 @@
                 <i class="ri-mail-line"></i>
                 <div>
                   <h4>Email</h4>
-                  <span>sahilpatel23500@gmail.com</span>
+                  <span><a href="mailto:sahilpatel23500@gmail.com" class="about__email-link">sahilpatel23500@gmail.com</a></span>
                 </div>
               </div>
               <div class="about__details-item">
@@ -287,7 +287,6 @@
               <div class="project__overlay">
                 <div class="project__links">
                   <a href="https://github.com/sahilpatel80" target="_blank" class="project__link-icon" title="View GitHub" onclick="event.stopPropagation();"><i class="ri-github-line"></i></a>
-                  <a href="https://www.rimpro-india.com/" target="_blank" class="project__link-icon" title="Visit Website" onclick="event.stopPropagation();"><i class="ri-external-link-line"></i></a>
                   <span class="project__link-icon" title="View Details"><i class="ri-eye-line"></i></span>
                 </div>
               </div>
@@ -297,9 +296,6 @@
               <h3 class="project__title">Rimpro India Corporate Web</h3>
               <p class="project__description">Business web portal for a global chemical manufacturer/exporter. Serves application directories and automates domestic and international sales inquiries.</p>
 
-              <div class="project__buttons" style="margin-top: auto; margin-bottom: var(--mb-0-75); display: flex; gap: 0.5rem;">
-                <a href="https://www.rimpro.in" target="_blank" class="button button--ghost" style="padding: 0.4rem 0.8rem; font-size: var(--smaller-font-size); border-radius: var(--radius-sm); border-width: 1px;" onclick="event.stopPropagation();"><i class="ri-external-link-line"></i> Visit Website</a>
-              </div>
 
               <div class="project__tech-list">
                 <span class="project__tech-pill">HTML5</span>
@@ -368,13 +364,11 @@
 
         <div class="contact__container container grid">
           <div class="contact__content">
-            <h3 class="contact__title">Talk to me</h3>
-
             <div class="contact__info">
               <div class="contact__card">
                 <i class="ri-mail-send-line contact__card-icon"></i>
                 <h4 class="contact__card-title">Email</h4>
-                <span class="contact__card-data">sahilpatel23500@gmail.com</span>
+                <span class="contact__card-data"><a href="mailto:sahilpatel23500@gmail.com" class="contact__card-email-link">sahilpatel23500@gmail.com</a></span>
                 <a href="mailto:sahilpatel23500@gmail.com" class="contact__button">Write me <i class="ri-arrow-right-line contact__button-icon"></i></a>
               </div>
 
@@ -392,29 +386,6 @@
                 <a href="https://wa.me/918469277581" target="_blank" class="contact__button">Text me <i class="ri-arrow-right-line contact__button-icon"></i></a>
               </div>
             </div>
-          </div>
-
-          <div class="contact__content">
-            <h3 class="contact__title">Send a message</h3>
-
-            <form action="" class="contact__form" id="contact-form">
-              <div class="contact__form-div">
-                <label class="contact__form-tag">Name</label>
-                <input type="text" placeholder="Insert your name" class="contact__form-input" required id="form-name" />
-              </div>
-
-              <div class="contact__form-div">
-                <label class="contact__form-tag">Mail</label>
-                <input type="email" placeholder="Insert your email" class="contact__form-input" required id="form-email" />
-              </div>
-
-              <div class="contact__form-div contact__form-area">
-                <label class="contact__form-tag">Project / Message</label>
-                <textarea placeholder="Write your message" class="contact__form-input" required id="form-message"></textarea>
-              </div>
-
-              <button type="submit" class="button">Send Message <i class="ri-send-plane-line"></i></button>
-            </form>
           </div>
         </div>
       </section>

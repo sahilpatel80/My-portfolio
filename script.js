@@ -1,18 +1,18 @@
 /*==================== SHOW MENU ====================*/
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close')
 
 /* Menu Show */
-if(navToggle){
-    navToggle.addEventListener('click', () =>{
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
 /* Menu Hide */
-if(navClose){
-    navClose.addEventListener('click', () =>{
+if (navClose) {
+    navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
@@ -20,7 +20,7 @@ if(navClose){
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
-function linkAction(){
+function linkAction() {
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
@@ -28,10 +28,10 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
-function scrollHeader(){
+function scrollHeader() {
     const header = document.getElementById('header')
     // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 80) {
+    if (this.scrollY >= 80) {
         document.querySelector('.header').classList.add('scroll-header');
     } else {
         document.querySelector('.header').classList.remove('scroll-header');
@@ -48,7 +48,7 @@ let isDeleting = false;
 
 function typeEffect() {
     const currentRole = roles[roleIndex];
-    
+
     if (isDeleting) {
         typingSpan.textContent = currentRole.substring(0, charIndex - 1);
         charIndex--;
@@ -56,9 +56,9 @@ function typeEffect() {
         typingSpan.textContent = currentRole.substring(0, charIndex + 1);
         charIndex++;
     }
-    
+
     let typeSpeed = isDeleting ? 50 : 100;
-    
+
     if (!isDeleting && charIndex === currentRole.length) {
         // Pause at the end of word
         typeSpeed = 1500;
@@ -68,7 +68,7 @@ function typeEffect() {
         roleIndex = (roleIndex + 1) % roles.length;
         typeSpeed = 500;
     }
-    
+
     setTimeout(typeEffect, typeSpeed);
 }
 
@@ -88,9 +88,9 @@ filterBtns.forEach(btn => {
         // Remove active class from other buttons
         filterBtns.forEach(b => b.classList.remove('active-filter'));
         e.target.classList.add('active-filter');
-        
+
         const filterValue = e.target.getAttribute('data-filter');
-        
+
         projectCards.forEach(card => {
             if (filterValue === 'all') {
                 card.classList.remove('hide-project');
@@ -108,32 +108,32 @@ filterBtns.forEach(btn => {
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
+function scrollActive() {
     const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
+    sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id')
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
+        } else {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
 }
 window.addEventListener('scroll', scrollActive)
 
-/*==================== SHOW SCROLL UP ====================*/ 
-function scrollUp(){
+/*==================== SHOW SCROLL UP ====================*/
+function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+    if (this.scrollY >= 350) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'ri-sun-line'
@@ -148,13 +148,13 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moo
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
 } else {
-  // Default to Dark Theme because it matches the requested rich aesthetics best
-  document.body.classList.add(darkTheme)
-  themeButton.classList.add(iconTheme)
+    // Default to Dark Theme because it matches the requested rich aesthetics best
+    document.body.classList.add(darkTheme)
+    themeButton.classList.add(iconTheme)
 }
 
 // Activate / deactivate the theme manually with the button
@@ -178,14 +178,14 @@ const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const nameVal = document.getElementById('form-name').value;
         const emailVal = document.getElementById('form-email').value;
         const messageVal = document.getElementById('form-message').value;
-        
+
         // Simple client side response feedback
         alert(`Thank you, ${nameVal}! Your message has been sent successfully. I'll get back to you at ${emailVal} as soon as possible.`);
-        
+
         // Reset form
         contactForm.reset();
     });
@@ -272,7 +272,6 @@ const projectsData = {
         ],
         contribution: "I served as the lead web developer responsible for full-cycle design, responsive HTML/CSS layout execution, product navigation structures, B2B contact form integration, hosting setup, domain configuration, and technical SEO.",
         tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "SEO", "Hosting & Deployment"],
-        liveLink: "https://www.rimpro.in",
         githubLink: "https://github.com/sahilpatel80"
     },
     rovar: {
@@ -294,27 +293,27 @@ const projectsData = {
 };
 
 const modal = document.getElementById('project-modal'),
-      modalClose = document.getElementById('project-modal-close'),
-      openModalBtns = document.querySelectorAll('.open-modal-btn');
+    modalClose = document.getElementById('project-modal-close'),
+    openModalBtns = document.querySelectorAll('.open-modal-btn');
 
 const modalTitle = document.getElementById('modal-title'),
-      modalSubtitle = document.getElementById('modal-subtitle'),
-      modalOverview = document.getElementById('modal-overview'),
-      modalFeatures = document.getElementById('modal-features'),
-      modalContribution = document.getElementById('modal-contribution'),
-      modalTech = document.getElementById('modal-tech'),
-      modalImgBox = document.querySelector('.project-modal__img-box'),
-      modalLinks = document.getElementById('modal-links');
+    modalSubtitle = document.getElementById('modal-subtitle'),
+    modalOverview = document.getElementById('modal-overview'),
+    modalFeatures = document.getElementById('modal-features'),
+    modalContribution = document.getElementById('modal-contribution'),
+    modalTech = document.getElementById('modal-tech'),
+    modalImgBox = document.querySelector('.project-modal__img-box'),
+    modalLinks = document.getElementById('modal-links');
 
 function openModal(projectId) {
     const project = projectsData[projectId];
     if (!project) return;
-    
+
     modalTitle.textContent = project.title;
     modalSubtitle.textContent = project.subtitle;
     modalOverview.textContent = project.overview;
     modalContribution.textContent = project.contribution;
-    
+
     // Tech list
     modalTech.innerHTML = '';
     project.tech.forEach(techName => {
@@ -323,7 +322,7 @@ function openModal(projectId) {
         pill.textContent = techName;
         modalTech.appendChild(pill);
     });
-    
+
     // Features list
     modalFeatures.innerHTML = '';
     project.features.forEach(featureText => {
@@ -331,7 +330,7 @@ function openModal(projectId) {
         li.textContent = featureText;
         modalFeatures.appendChild(li);
     });
-    
+
     // Dynamic Image Loading / Placeholder Fallback
     if (project.image) {
         modalImgBox.innerHTML = `
@@ -377,7 +376,7 @@ function openModal(projectId) {
         githubBtn.innerHTML = `<i class="ri-github-line"></i> GitHub`;
         modalLinks.appendChild(githubBtn);
     }
-    
+
     modal.classList.add('active-modal');
     document.body.style.overflow = 'hidden'; // Stop background scrolling
 }
@@ -405,7 +404,7 @@ openModalBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         // Prevent click if we are clicking a link inside the card overlay (like Github link)
         if (e.target.closest('a')) return;
-        
+
         const projectId = btn.getAttribute('data-project-id');
         openModal(projectId);
     });
@@ -422,7 +421,7 @@ if (modal) {
             closeModal();
         }
     });
-    
+
     // Close on Escape key press
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.classList.contains('active-modal')) {
